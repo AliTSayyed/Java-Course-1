@@ -15,7 +15,7 @@ public class StarSign {
         printTriangle(3);
         System.out.println("\n---");
     }
-
+    // create printStars method that prints n amount of stars in a row
     public static void printStars(int number) {
         int count = 0;
         while (count < number) {
@@ -24,7 +24,7 @@ public class StarSign {
         }
         System.out.println("");
     }
-
+    // create printSquare method that prints same row and column amount of stars
     public static void printSquare(int size) {
         int count = 0;
         while (count < size) {
@@ -33,7 +33,7 @@ public class StarSign {
             count++;
         }
     }
-
+    // create printRectangle method that preints n amount of rows and n amount of columns of stars
     public static void printRectangle(int width, int height) {
         int count = 0;
         while (count < height) {
@@ -42,7 +42,7 @@ public class StarSign {
             count++;
         }
     }
-
+    // create printTriangle method that prints n amount of stars incremently per row
     public static void printTriangle(int size) {
         int count = 1;
         for (int i = 0; i < size; i++) {
