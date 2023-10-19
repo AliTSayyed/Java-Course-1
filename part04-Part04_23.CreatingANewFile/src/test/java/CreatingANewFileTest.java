@@ -11,7 +11,7 @@ public class CreatingANewFileTest {
 
     @Test
     public void fileExists() {
-        assertTrue(new File("file.txt").exists());
+        assert(new File("file.txt").exists());
     }
 
     @Test
