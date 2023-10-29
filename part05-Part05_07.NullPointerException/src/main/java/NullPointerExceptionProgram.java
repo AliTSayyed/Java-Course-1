@@ -20,6 +20,11 @@ public class NullPointerExceptionProgram {
             System.out.println(lines.get(index));
             index++;
         }
+        
+        ArrayList<String> test = new ArrayList<>();
+        test = null;
+        test.add("Hi");
+        System.out.println((test.get(0)));
 
     }
 }
