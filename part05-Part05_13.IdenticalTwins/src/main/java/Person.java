@@ -31,7 +31,12 @@ public class Person {
         //typecast to Person object
         Person comparedObject = (Person) compared;
         
-        if (this.name.equals(comparedObject.name) && this.birthday.equals(comparedObject.birthday) && this.height == comparedObject.height && this.weight == comparedObject.weight){
+        //compare each parameter of the objects. Comparing objects uses the .equals method since objects are refrence types like strings.
+        
+        if (this.name.equals(comparedObject.name) && 
+            this.birthday.equals(comparedObject.birthday) && 
+            this.height == comparedObject.height && 
+            this.weight == comparedObject.weight){
             return true;
         }
         return false;
