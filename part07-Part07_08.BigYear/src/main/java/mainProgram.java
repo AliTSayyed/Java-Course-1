@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class mainProgram {
@@ -8,8 +7,11 @@ public class mainProgram {
         // if and when you create other classes, pass the scanner to them
         // as a parameter
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);        
+        BirdDataBase birds = new BirdDataBase();        
+        UserInterface program = new UserInterface(birds, scan);
+        
+        program.start();
 
     }
-
 }
